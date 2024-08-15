@@ -11,4 +11,5 @@ public class GameEvents : MonoBehaviour
     
     public static Action GameOver;
 
+    public static Action<int> UpdateBestScore;
 }
