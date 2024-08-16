@@ -235,6 +235,7 @@ public class MovingCube : MonoBehaviour
         
 
         cube.AddComponent<Rigidbody>();
+        cube.GetComponent<Renderer>().material = GetComponent<Renderer>().material;
         cube.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color;
         Destroy(cube.gameObject, 1f);
     }
